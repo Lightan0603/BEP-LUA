@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A1</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+  <div class="box1" id="one">
+    <img src="images/1.1@3x.png" alt="Page_1" height="900">
+  </div>
+
+  <div class="box2" id="fire">
+    <img src="images/1.2@3x.png" alt="Page_1" height="900">
+  </div>
+
+  <div class="box2" id="fire2">
+    <img src="images/1.3@3x.png" alt="Page_1" height="900">
+  </div>
+
+  <div class="circle" id="circle1"></div>
+
+  <div class="smoke" id="smoke1">
+    <img src="images/2.2@3x.png" alt="Page_1" height="900">
+  </div>
+
+  <div class="smoke" id="smoke2">
+    <img src="images/2.3@3x.png" alt="Page_1" height="900">
+  </div>
+  
+  <div class="cloud" id="CA4">
+    <img src="images/CA4@3x.png" alt="Page_2" height="900">
+  </div>
+
+  <div class="start" id="start1">
+    <img src="images/start1@3x.png" alt="Page_2" height="900">
+  </div>
+
+  <div class="start" id="start2">
+    <img src="images/start2@3x.png" alt="Page_2" height="900">
+  </div>
+
+  <div class="box1" id="two">
+    <img src="images/2.1@3x.png" alt="Page_2" height="900">
+  </div>
+
+  <div class="box1" id="three">
+    <img src="images/3.1@3x.png" alt="Page_3" height="900">
+  </div>
+
+  <div class="box1" id="dream">
+    <img src="images/3.2@3x.png" alt="Page_3" height="900">
+  </div>
+
+  <div class="letter" id="letter_animation_1">
+    <img src="images/letter_animation_1@3x.png" alt="Page_3" height="900">
+  </div>
+
+  <div class="letter" id="letter_animation_2">
+    <img src="images/letter_animation_2@3x.png" alt="Page_3" height="900">
+  </div>
+
+  <img src="images/close_letter.png" id="close_letter" onclick="ChangeImage()">
+</div>
+<script src="index.js"></script>
+
+
+  <div class="speak" id="speak">
+    <img src="images/Speak@3x.png" alt="Page_3" height="900">
+  </div> 
+
+  <div class="box1" id="four">
+    <img src="images/4.1@3x.png" alt="Page_4" height="900">
+  </div>
+
+  <div class="box1" id="five">
+    <img src="images/5.1@3x.png" alt="Page_5" height="900">
+  </div>
+
+  <div class="box1" id="six">
+    <img src="images/6.1@3x.png" alt="Page_6" height="900">
+  </div>
+
+  <div class="leafs" id="leafs">
+    <img src="images/leafs.png" alt="leafs">
+  </div>
+
+  <div class="cloud" id="cloud">
+    <img src="images/cloud.png" alt="cloud">
+  </div>
+
+
+  <div class="box3">
+    <img src="images/close_radio@3x.png" id="icon" alt="Radio Icon">
+  </div>
+  <audio id="Music">
+      <source src="images/HuongxuaCungTien-LeThu_83gv.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    var Music = document.getElementById("Music");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+      if(Music.paused){
+        Music.play();
+        icon.src = "images/open_radio@3x.png";
+      }else{
+        Music.pause();
+        icon.src = "images/close_radio@3x.png";
+      }
+    }
+  </script>
+
+  <div class="hiden" id="eight1"></div>
+  <div class="hiden" id="eight2"></div>
+  <div class="hiden" id="eight3"></div>
+  <div class="hiden" id="eight4"></div>
+  <div class="hiden" id="eight5"></div>
+  <div class="hiden" id="eight6"></div>
+  <div class="hiden" id="eight7"></div>
+  
+</body>
+</html>
